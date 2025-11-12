@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fine Arts & Dance Club</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background-color: #fff;
+        color: #222;
+        overflow-x: hidden;
+    }
+
+    .header {
+        background: url("C:\Users\swath\OneDrive\Pictures\Documents\finearts_3.jpg");
+        height: 55vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+    }
+
+    .header::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.4);
+    }
+
+    .header h1 {
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    
+    .leaders {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: #fff;
+        margin: -60px auto 30px;
+        padding: 30px;
+        width: 90%;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        z-index: 5;
+        position: relative;
+        gap: 20px;
+    }
+
+    .leader {
+        text-align: center;
+        width: 180px;
+    }
+
+    .leader img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .leader h3 {
+        margin-top: 10px;
+        color: #5a2ca0;
+        font-size: 16px;
+    }
+
+    .leader p {
+        font-size: 14px;
+        color: #333;
+    }
+
+    
+    .content {
+        width: 85%;
+        margin: 30px auto;
+        text-align: justify;
+    }
+
+    .content h2 {
+        color: #5a2ca0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .content img {
+        width: 300px;
+        border-radius: 10px;
+        margin: 15px;
+        transition: transform 0.4s;
+    }
+
+    .content img:hover {
+        transform: scale(1.05);
+    }
+
+    .content p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+ 
+    .quote {
+        text-align: center;
+        margin: 40px 0;
+        font-style: italic;
+        color: #444;
+    }
+
+    
+    .back-btn {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 50px;
+        background: #5a2ca0;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 6px;
+        transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+        background: #411e75;
+    }
+</style>
+</head>
+<body>
+
+
+<div class="header">
+    <h1>Fine Arts & Dance Club</h1>
+</div>
+
+
+
+
+<div class="content">
+    <h2>Fine Arts Dance</h2>
+    <p>
+        Grooves is the dance club of Sri Eshwar. Grooves flash mobs are legendary at Sri Eshwar.
+        Our dancers perform during many college events and also represent our institution in inter-college culturals.
+    </p>
+
+    <div class="gallery">
+        <img src="C:\Users\swath\OneDrive\Pictures\Documents\fine arts and club.jpg" alt="Dance Performance">
+      
+    </div>
+
+    <p>
+        Harmonix is our music club! All students interested in singing or playing instruments are welcome to join.
+        Harmonix entertains students with live band performances during fests and special events.
+    </p>
+</div>
+
+
+<div class="quote">
+    “Music and Arts are the guiding lines of the world.”
+</div>
+
+
+<a href="file:///C:/Users/swath/Documents/HTML/LIST%20PAGE%201.html" class="back-btn">← Back to Clubs</a>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.style.opacity = 0;
+    setTimeout(() => {
+        document.body.style.transition = "opacity 1s ease-in";
+        document.body.style.opacity = 1;
+    }, 100);
+});
+</script>
+
+</body>
+</html> 
